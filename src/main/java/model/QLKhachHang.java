@@ -50,7 +50,7 @@ public class QLKhachHang {
   public boolean GhiHoaDon(String FIle_XUAT) {       
      ArrayList<String> output = new ArrayList<>();
       for (KhachHang kh : dsKhachHang) {
-           String info = kh.getMaso() + ";"+ kh.getHoten()+";" + kh.getLoai()+";"+ ";" + kh.getChisocu() +";" + kh.getChisomoi()+";" + kh.getTieuThu()+ ";" + kh.getTienTra();
+           String info = kh.getMaso() + ";"+ kh.getHoten()+";" + kh.getLoai()+";" + kh.getChisocu() +";" + kh.getChisomoi()+";" + kh.getTieuThu()+ ";" + kh.getTienTra();
          output.add(info);
       }
       return FileHelper.writeFileText(FIle_XUAT, output);
